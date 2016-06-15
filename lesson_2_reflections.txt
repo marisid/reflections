@@ -1,0 +1,10 @@
+UDACITY GIT & GITHUB COURSE - LESSON 2
+
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: A Git repository in initialised at the current directory, which can be empty or can already contain some files. The Git repository start as an empty repository and is like a normal directory but also contains some metadata in a .git file that can track its history. This is the reason why we need it - to track history and apply version control.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A: The staging area is an intermediate state between the working directory and the Git repository. The benefit it offers is that you can control your commits (i.e. decide on which files from the working directory to be committed and when).
+
