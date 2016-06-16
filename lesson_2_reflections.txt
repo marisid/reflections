@@ -1,10 +1,33 @@
 UDACITY GIT & GITHUB COURSE - LESSON 2
-
+--------------------------------------
 Q: What happens when you initialize a repository? Why do you need to do it?
 
 A: A Git repository in initialised at the current directory, which can be empty or can already contain some files. The Git repository start as an empty repository and is like a normal directory but also contains some metadata in a .git file that can track its history. This is the reason why we need it - to track history and apply version control.
-
+--------------------------------------
 Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 A: The staging area is an intermediate state between the working directory and the Git repository. The benefit it offers is that you can control your commits (i.e. decide on which files from the working directory to be committed and when).
+--------------------------------------
+Q: How can you use the staging area to make sure you have one commit per logical change?
+
+A: You can add files to the staging area accordingly and then make a commit to the repository. This clears the staging areas from the files and you can then add more files to proceed with the next commit. The staging area is like a temporary intermediate area (like the cashier belt in the supermarket before you checkout your shopping and pay).
+--------------------------------------
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A: Quite often (depending on the size and nature of your project) you need to experiment on your original code or add more features or keep completely different entities of your program separate so that the history is organised and the different parts you are working on are in different branches. The master branch is not affected by creating, commiting to and checking out other branches. In any case, all the commits you make, irrespectively of which branch they belong to, can be 'combined' later on. This will be discussed later in the course. 
+--------------------------------------
+Q: How do the diagrams help you visualize the branch structure?
+
+A: Because they show you a list of commits, as they are contained in the master branch, a list of the commits in branches created from the master branch at different times as well as more recent commits that are in the master branch after the creation of other branches. In this way, you can visualise the history of different commits and branches in relation to the master branch. 
+--------------------------------------
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A: The result of merging two branches together is that the new branch includes all the commits from the two merged branches. This means that the result of the merging (which is a new commit) will have two parents: the two tips of the merged branches and will be the tip of the final branch after merging.
+--------------------------------------
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A: Pros: Less time than manual merging and less trouble for the user.
+   Cons: Advanced Git mechanisms and machine learning algorithms to decide on optimisation and auto-detect how to resolve conflicts. Even if such mechanisms were available, the authors/users perspective would be ignored which is bad practice when building up a project. 
+   Manual conflict resolution is better because the code the author creates is project-specific and auto-merging would be prone to bad guesswork and therefore, mistakes. 
+--------------------------------------
 
